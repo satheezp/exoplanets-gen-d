@@ -1,0 +1,36 @@
+<div class="container mt-4 exoplanets">
+  <h2>Exoplanets Data:</h2>
+  <div class="row mt-4">
+    <div class="col">
+      <p>Number of orphan planets (no star) :<span> {{ orphanPlanets }}</span></p>
+    </div>
+    <div class="col">
+      <p>The name (planet identifier) of the planet orbiting the hottest star : <span> {{ hottestPlanet }}</span></p>
+    </div>
+  </div>
+  <h3>A timeline of the number of planets discovered per year grouped by size</h3>
+  <table>
+    <thead>
+    <tr>
+      <th>Size</th>
+      <th>Year</th>
+      <th>Count</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let sizeGroup of sizeGroups">
+      <td class="size">{{ sizeGroup.size }}</td>
+      <td>
+        <li *ngFor="let item of sizeGroup.items ? sizeGroup.items : []">
+          {{ item.year ? item.year : 'Year Unknown' }}
+        </li>
+      </td>
+      <td>
+        <li *ngFor="let item of sizeGroup.items ? sizeGroup.items : []">
+          {{ item.count ? item.count : 0 }}
+        </li>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

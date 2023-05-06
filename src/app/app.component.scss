@@ -1,0 +1,28 @@
+.exoplanets {
+  li {
+    list-style-type: none;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  table {
+    th, li {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+
+      td {
+        text-align: center;
+        width: fit-content;
+      }
+    }
+  }
+
+  .size {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+}
