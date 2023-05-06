@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
 
 ## Install Node JS
-Install the latest Node JS from [here ](https://nodejs.org/dist/v18.16.0/node-v18.16.0-x64.msi)
+Install the latest Node JS from [here ](https://nodejs.org/en)
 
 ## Install the Angular CLI
 Run `npm install` inside the project Directory (i.e exoplanets-gen-d)
