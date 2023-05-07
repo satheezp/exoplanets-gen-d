@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: exoplanetsgend-service
+spec:
+  selector:
+    app: exoplanetsgend
+  ports:
+    - protocol: TCP
+      port: 90
+      targetPort: 80
+  type: NodePort

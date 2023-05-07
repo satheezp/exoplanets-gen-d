@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: exoplanetsgend
+spec:
+  selector:
+    matchLabels:
+      app: exoplanetsgend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: exoplanetsgend
+    spec:
+      containers:
+        - name: exoplanetsgend-app
+          image: atheezp/exoplanetsgend:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 80
