@@ -1,3 +1,13 @@
+.container {
+  width: 1028px;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1028px;
+  }
+}
+
 .exoplanets {
   li {
     list-style-type: none;
@@ -5,6 +15,11 @@
 
   span {
     font-weight: bold;
+  }
+
+  .highlight {
+    background-color: green;
+    color: white;
   }
 
   table {
